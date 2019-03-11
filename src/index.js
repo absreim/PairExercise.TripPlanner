@@ -1,4 +1,5 @@
 const mapboxgl = require("mapbox-gl");
+const buildMarker = require('./marker');
 
 mapboxgl.accessToken = "pk.eyJ1IjoibmV2aW5jIiwiYSI6ImNqdDRpaDRmcDA3bTY0NHFzbnRnOHlrNmIifQ.0Se6LVfiQu4m3M0-n0dC1Q";
 
@@ -8,3 +9,5 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
+buildMarker('Activity', 'FullStack Academy', [-74.009, 40.705]).addTo(map);

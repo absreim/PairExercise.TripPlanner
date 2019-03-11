@@ -7,6 +7,32 @@
     <script src="./bundle.js" defer></script>
   </head>
   <body>
-    <div id="map"></div>
+    <nav></nav>
+    <div>
+      <div id="map"></div>
+      <div id="marker_selection">
+          <h3>Hotels</h3>
+          <select>
+              <option value="">--Please choose an option--</option>
+          </select>
+          <h3>Restaurants</h3>
+          <select>
+              <option value="">--Please choose an option--</option>
+          </select>
+          <h3>Things To Do</h3>
+          <select>
+              <option value="">--Please choose an option--</option>
+          </select>
+        </div>
+        <div id='itinerary'>
+          <h2 id='itinerary_header'>Itinerary</h2>
+          <h3>My Hotel</h3>
+          <li id='hotel_list'></li>
+          <h3>My Restaurants</h3>
+          <li id='restaurant_list'></li>
+          <h3>My Activities</h3>
+          <li id='activities_list'></li>
+        </div>
+    </div>
   </body>
 </html>
